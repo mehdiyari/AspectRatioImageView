@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="ariv_minWidth" format="dimension" />
+        <attr name="ariv_maxWidth" format="dimension" />
+        <attr name="ariv_minHeight" format="dimension" />
+        <attr name="ariv_maxHeight" format="dimension" />
+        <attr name="ariv_adapterMode" format="boolean"/>
+        <attr name="android:src"/>
+    </declare-styleable>
+</resources>
