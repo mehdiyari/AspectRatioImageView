@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">AspectRatioImageView</string>
-    <string name="chat_recyclerview">Chat RecyclerView</string>
-    <string name="staggered_grid_layout_manager">StaggeredGridLayoutManager</string>
-    <string name="info"><![CDATA[example of aspectRatioImageView shows all photos on device in two way. \n1 -> ChatRecyclerView\n2 -> StaggeredGridLayoutManager]]></string>
+    <string name="chat_recyclerview">Chat Activity</string>
+    <string name="staggered_grid_layout_manager">StaggeredGridLayoutManager Activity</string>
 </resources>

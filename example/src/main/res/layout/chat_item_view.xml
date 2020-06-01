@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_gravity="end"
+        android:layoutDirection="ltr"
+        tools:ignore="UnusedAttribute">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_out"
+            android:tint="@color/colorAccent"
+            android:layout_alignLeft="@+id/frameLayoutImageViewChatContainer"
+            android:layout_alignRight="@+id/frameLayoutImageViewChatContainer"
+            android:layout_alignTop="@+id/frameLayoutImageViewChatContainer"
+            android:scaleType="fitXY"
+            android:layout_alignBottom="@+id/frameLayoutImageViewChatContainer"/>
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutImageViewChatContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ir.mehdiyari.ariv.ui.AspectRatioImageView
+                android:id="@+id/aspectRatioImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ariv_adapterMode="true"
+                app:riv_corner_radius="8dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="3dp" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

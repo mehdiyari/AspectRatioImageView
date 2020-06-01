@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bucket_max_width">140dp</dimen>
+    <dimen name="pdding_between_staggred_items">3dp</dimen>
+
+    <dimen name="chat_item_min_width">170dp</dimen>
+    <dimen name="chat_item_max_width">260dp</dimen>
+    <dimen name="chat_item_min_height">120dp</dimen>
+    <dimen name="chat_item_max_height">340dp</dimen>
+</resources>

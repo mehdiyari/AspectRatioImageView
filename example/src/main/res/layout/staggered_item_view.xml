@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/pdding_between_staggred_items"
+    android:layout_height="wrap_content">
+
+    <ir.mehdiyari.ariv.ui.AspectRatioImageView
+        android:id="@+id/aspectRatioImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:ariv_adapterMode="true"
+        app:riv_corner_radius="13dp"/>
+
+</FrameLayout>
