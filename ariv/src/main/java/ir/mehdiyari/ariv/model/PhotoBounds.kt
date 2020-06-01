@@ -7,4 +7,12 @@ data class PhotoBounds(
         val maxHeight: Int = 0
 ) {
     fun isNotSet(): Boolean = minWidth == 0 && maxWidth == 0 && minHeight == 0 && maxHeight == 0
+
+    fun calculateScaledWidthAndHeightBasedOnBounds(originalWidth: Int, originalHeight: Int): Pair<Int, Int> {
+        if (isNotSet()) return 0 to 0
+        return PhotoDimension(originalWidth, originalHeight).let {
+            it.setPhotoDimensionWhenDimensionIsNotInBounds(this)
+            it.width to it.height
+        }
+    }
 }

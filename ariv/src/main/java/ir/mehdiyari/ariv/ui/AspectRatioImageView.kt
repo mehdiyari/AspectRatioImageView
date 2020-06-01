@@ -153,4 +153,22 @@ class AspectRatioImageView(context: Context, attributeSet: AttributeSet?) :
      * get current [photoDimension] as Pair<Width, Height>
      */
     fun getDimension(): Pair<Int, Int> = photoDimension.width to photoDimension.height
+
+    companion object {
+
+        /**
+         * calculate height based on scaledWidth
+         * @param originalWidth Int original photo width
+         * @param originalHeight Int original photo height
+         * @param scaledWidth Int scaled width
+         * @return Int scaled height based on scaledWidth
+         */
+        fun getHeightBasedOnScaledWidth(
+            originalWidth: Int,
+            originalHeight: Int,
+            scaledWidth: Int
+        ): Int = (originalHeight / (originalWidth.toFloat() / scaledWidth)).toInt()
+
+
+    }
 }
