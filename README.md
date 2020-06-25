@@ -80,6 +80,7 @@ aspectRatioImageView.setImageDrawable(ContextCompat.getDrawable(this@MainActivit
 | ariv_minHeight   | dimension | Min height of ImageView                                          |
 | ariv_maxHeight   | dimension | Max height of ImageView                                          |
 | ariv_adapterMode | boolean   | If you are using ariv inside<br> recyclerView set adapterMode to true|
+| ariv_src         | reference | image source                                                     |
 
 note: <br>
 Because AspectRatioImageView used [RoundImageView](https://github.com/vinc3m1/RoundedImageView) as base 

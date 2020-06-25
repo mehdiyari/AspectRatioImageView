@@ -69,8 +69,8 @@ class AspectRatioImageView(context: Context, attributeSet: AttributeSet?) :
                 adapterMode =
                     it.getBoolean(R.styleable.AspectRatioImageView_ariv_adapterMode, false)
 
-            if (it.hasValue(R.styleable.AspectRatioImageView_android_src))
-                super.setImageDrawable(it.getDrawable(R.styleable.AspectRatioImageView_android_src))
+            if (it.hasValue(R.styleable.AspectRatioImageView_ariv_src))
+                setImageDrawable(it.getDrawable(R.styleable.AspectRatioImageView_ariv_src))
         }
     }
 
@@ -120,7 +120,7 @@ class AspectRatioImageView(context: Context, attributeSet: AttributeSet?) :
 
     override fun setImageResource(resId: Int) {
         ContextCompat.getDrawable(context, resId).also {
-            if (it is BitmapDrawable) it.bitmap.also(this::applyAutoDimension)
+            if (it is BitmapDrawable) it.bitmap?.also(this::applyAutoDimension)
             super.setImageDrawable(it)
         } ?: super.setImageResource(resId)
     }

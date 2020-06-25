@@ -6,6 +6,6 @@
         <attr name="ariv_minHeight" format="dimension" />
         <attr name="ariv_maxHeight" format="dimension" />
         <attr name="ariv_adapterMode" format="boolean"/>
-        <attr name="android:src"/>
+        <attr name="ariv_src" format="reference"/>
     </declare-styleable>
 </resources>
